@@ -1,13 +1,15 @@
 # System kald
 
+1. Brug kalender-siden til at printe en kalender for år 2020
 1. Brug kalenderhjemmesiden til at skrive en fil på serveren der hedder KILROY.
 2. Brug kalenderhjemmesiden til at checke at du har skrevet filen.
-2. Brug kalenderhjemmesiden til at udskrive sin egen kildekode.
+2. Brug kalenderhjemmesiden til at slette filen der hedder KILROY.
 
 ## Hints
 
 Du kan bruge følgende Unix kommandoer til at løse opgaven:
-- `curl` til at kalde serveren direkte (`-X POST` sender et post request)
-- `touch` til at oprette en tom fil med et navn du vælger
-- `ls` til at vise indholdet af en mappe 
-- `cat` til at udskrive indholdet af en fil
+- `curl` til at kalde en server direkte (`-X POST` sender et post request, `-F 'key=value'` sender form data)
+- `touch` til at oprette en tom fil med et navn du vælger, f.eks. KILROY.
+- `ls` til at vise alle synlige filer i en mappe
+- `rm` til at slette en fil
+- `kommando 1 && kommando 2` udfører kommando 2 hvis kommando 1 gik godt.
