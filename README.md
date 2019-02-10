@@ -4,18 +4,20 @@
 
 ![Logo](https://codingpirates.dk/wp-content/uploads/2016/09/Forside-Logo.png)
 
-I dette projekt kan du lære om hacking, både angreb og forsvar. Specifikt vil du lære hvordan man angriber en sårbar server og hvordan du forsvarer dig mod angreb hvis serveren er din egen. Du vil lære at forstå hvad det vil sige at en server er sårbar, nemlig at dem der har skrevet koden til den ikke har tænkt sig ordentligt om!!
+I dette projekt vil du lære om hacking. Du kører forskellige serverprogrammer, som du bagefter selv hacker. På den måde lærer du hvad der gør en server sårbar og hvordan du kan forbedre den så den er sværere at hacke. Du vil lære at servere tit er sårbare fordi dem der har skrevet koden til dem ikke har tænkt sig ordentligt om!!
 
-Formålet er ikke at du skal bruge det du har lært til at angribe andres servere! Det er nemligt ulovligt. Det er meningen at du skal lære at skrive kode, som onde hackere har færre muligheder for at angribe. Det er lovligt at angribe din egen server lige så tosset du vil. Du kan også aftale med en ven at i angriber hinandens servere, men husk altid at spørge om lov først! At hacke selv er måske den bedste måde at lære om hvordan hacking fungerer, så du kan forsvare dig selv og andre mod hackerangreb. Vi synes at det er vigtigt at vi allesammen lærer om hacking, så vi kan hjælpe med at beskytte hinanden!
+Det er ikke meningen at du skal bruge det du lærer her til at angribe andres servere! Det er nemligt ulovligt. Tværtimod er det meningen at du skal lære at skrive kode, der er sværere at hacke, så onde hackere har færre muligheder for at angribe dig. Det er helt lovligt at angribe din egen server lige så tosset, som du vil. Du kan også aftale med en ven at i angriber hinandens servere, men husk altid at spørge om lov først! At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer. Vi synes at det er vigtigt at vi allesammen lærer om hacking, så vi kan hjælpe med at beskytte hinanden!
 
 ## Struktur
 
-Der er en undermappe for hvert emne du kan lære om i dette projekt. Hvert emne har en tilhørende server, som
-er gemt i sin egen mappe og der finder du også mere information om hvad lige præcis den server går ud på.
+I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i en tekstfil, som ligger i samme mappe som serverkoden. Den nemmeste mission hedder helloworld og har følgende filer, som alle de andre missioner i øvrigt også har.
 
-Lektioner:
-
-- **helloworld**: lær at starte en server og åbne den i en browser.
+```
+└── helloworld
+    ├── opgave.txt
+    ├── server.py
+    └── startserver.sh
+```
 
 ## Forudsætninger
 
@@ -26,27 +28,13 @@ Du undrer dig måske over hvorfor vi bruger Linux og ikke f.eks. Windows eller M
 
 ## Sådan gør du
 
-Her vil du lære hvordan du kan starte og bruge en server i dette projekt.
-Vi bruger helloworld serveren som eksempel.
-
-Der er følgende filer i undermappen til helloworld. Det er de samme filer du vil
-finde i alle undermapperne.
-
-```
-└── helloworld
-    ├── opgave.txt
-    ├── server.py
-    └── startserver.sh
-```
-
-Start med at åbne server-mappen:
+Her er en walkthrough til helloworld missionen. Start med at åbne server-mappen:
 
 ```
 cd helloworld
 ```
 
-
-Du kan læse om den opgave der hører til serveren ved at bruge `cat` eller `less` kommandoen.
+Læs om missionen ved at åbne opgave-filen med f.eks. `cat` eller `less` kommandoen.
 
 ```
 cat opgave.txt
@@ -54,10 +42,21 @@ cat opgave.txt
 less opgave.txt
 ```
 
-Når du har forstået opgaven kan du starte serveren.
+Når du har læst opgaven skal du starte serveren. Det gør du ved at køre et shellscript ved navn `./startserver.sh`, som ligger i samme mappe som opgaveteksten. Kør shellscriptet ved at skrive `./` foran scriptets filnavn i terminalen, hvilket fortæller terminalen at det program du forsøger at køre ligger i samme mappe hvor du lige befinder dig i.
+
+> Hint: brug `pwd` og `ls` kommandoerne til at se hvor du befinder dig og hvilke filer der er i den mappe, som du befinder dig i.
 
 ```
 # Start serveren
 ./startserver.sh
-# Åben din browser på http://localhost:5000/ og se om du kan løse opgaven.
 ```
+
+Nu har du startet serveren. Se om du kan åbne dens hjemmeside i en browser. Hvis du har startet serveren på en anden maskine end din egen skal du først finde ud af hvilken IP adresse serveren har. Derefter skal du finde ud af hvilken port serveren "lytter" på. Kombiner de to oplysninger og åben følgende side i din browser:
+
+> Hint: du kan bruge kommandoen `ifconfig` til at se hvilken IP address din server har. Du kan bruge kommandoen `lsof -Pnl +M -i4 | grep -i python` til at se hvilken port serveren lytter på (serveren er skrevet i Python).
+
+```
+http://{den IP addresse du har fundet frem til}/{den port du har fundet frem til}
+```
+
+Hvis alt er gået godt vil du se teksten 'Hej hacker!' i din browser.
