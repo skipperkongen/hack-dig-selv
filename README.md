@@ -1,4 +1,4 @@
-# Sårbare Servere
+# Hacker selvforsvar
 
 > Dette projekt er udviklet af Coding Pirates på ITU.
 
