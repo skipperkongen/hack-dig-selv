@@ -1,4 +1,4 @@
-# Hacker selvforsvar
+# Hack dig selv
 
 > Dette projekt er udviklet af frivillige hos Coding Pirates på ITU. Ansvarlig for projektet er Pimin Konstantin Kefaloukos så alle spørgsmål angående projektet skal stilles til ham.
 
