@@ -1,17 +1,22 @@
 # Sårbare Servere
 
-I dette projekt kan du lære om hacking, både angreb og forsvar, af servere. Formålet er
-at du skal lære at skrive mere sikker serverkode, som andre har færre muligheder for at angribe.
-Det er ikke meningen at du skal bruge det du har lært til at angribe andres servere! Det er nemligt ulovligt.
-Men det er til gengæld lovligt at angribe sin egen server for at lære hvordan hacking fungerer. Det er vigtigt
-at du lærer om hacking så du kan være med at sikre andre og dig selv imod det!
+I dette projekt kan du lære om hacking, både angreb og forsvar. Specifikt vil du lære hvordan man angriber en sårbar server og hvordan du forsvarer dig mod angreb hvis serveren er din egen. Du vil lære at forstå hvad det vil sige at en server er sårbar, nemlig at dem der har skrevet koden til den ikke har tænkt sig ordentligt om!!
 
-I dette projekt finder du en undermappe per emne du skal lære. Hvert emne har en tilhørende server, som
-er gemt i sin egen mappe.
+
+Formålet er at du skal lære at skrive mere sikker serverkode, sådan at andre har færre muligheder for at angribe en server som DU har lavet.
+Det er ikke meningen at du skal bruge det du har lært til at angribe andres servere! Det er nemligt ulovligt.
+Men det er til gengæld lovligt at angribe din egen server for at lære hvordan hacking fungerer og finde ud af om den er sårbar. Det er vigtigt
+at vi allesammen lærer om hacking, så vi kan hjælpe hinanden mod hackerangreb!
+
+
+# Struktur
+
+Der er en undermappe for hvert emne du kan lære i dette projekt. Hvert emne har en tilhørende server, som
+er gemt i sin egen mappe og der er også mere information om hvad det går ud på.
 
 Her er en liste over alle de servere du finder i dette projekt:
 
-- helloworld: opgaven går ud på at starte en server og åbne dens side i en browser.
+- helloworld: lær at starte en server og åbne den i en browser.
 
 # Sådan gør du
 
