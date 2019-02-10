@@ -2,11 +2,7 @@
 
 I dette projekt kan du lære om hacking, både angreb og forsvar. Specifikt vil du lære hvordan man angriber en sårbar server og hvordan du forsvarer dig mod angreb hvis serveren er din egen. Du vil lære at forstå hvad det vil sige at en server er sårbar, nemlig at dem der har skrevet koden til den ikke har tænkt sig ordentligt om!!
 
-
-Formålet er at du skal lære at skrive mere sikker serverkode, sådan at andre har færre muligheder for at angribe en server som DU har lavet.
-Det er ikke meningen at du skal bruge det du har lært til at angribe andres servere! Det er nemligt ulovligt.
-Men det er til gengæld lovligt at angribe din egen server for at lære hvordan hacking fungerer og finde ud af om den er sårbar. Det er vigtigt
-at vi allesammen lærer om hacking, så vi kan hjælpe hinanden mod hackerangreb!
+Formålet er ikke at du skal bruge det du har lært til at angribe andres servere! Det er nemligt ulovligt. Det er meningen at du skal lære at skrive kode, som onde hackere har færre muligheder for at angribe. Det er lovligt at angribe din egen server og det er måske den bedste måde at lære om hvordan hacking fungerer. Det er vigtigt at vi allesammen lærer om hacking, så vi kan hjælpe hinanden mod hackerangreb!
 
 
 # Struktur
