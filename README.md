@@ -10,12 +10,12 @@ Formålet er ikke at du skal bruge det du har lært til at angribe andres server
 
 # Struktur
 
-Der er en undermappe for hvert emne du kan lære i dette projekt. Hvert emne har en tilhørende server, som
-er gemt i sin egen mappe og der er også mere information om hvad det går ud på.
+Der er en undermappe for hvert emne du kan lære om i dette projekt. Hvert emne har en tilhørende server, som
+er gemt i sin egen mappe og der finder du også mere information om hvad lige præcis den server går ud på.
 
-Her er en liste over alle de servere du finder i dette projekt:
+Emner i dette projekt:
 
-- helloworld: lær at starte en server og åbne den i en browser.
+- **helloworld**: lær at starte en server og åbne den i en browser.
 
 # Sådan gør du
 
