@@ -13,7 +13,7 @@ Formålet er ikke at du skal bruge det du har lært til at angribe andres server
 Der er en undermappe for hvert emne du kan lære om i dette projekt. Hvert emne har en tilhørende server, som
 er gemt i sin egen mappe og der finder du også mere information om hvad lige præcis den server går ud på.
 
-Emner i dette projekt:
+Lektioner:
 
 - **helloworld**: lær at starte en server og åbne den i en browser.
 
