@@ -1,6 +1,6 @@
 # Hacker selvforsvar
 
-> Dette projekt er udviklet af Coding Pirates på ITU.
+> Dette projekt er udviklet af frivillige hos Coding Pirates på ITU. Ansvarlig for projektet er Pimin Konstantin Kefaloukos, som privatperson, så alle spørgsmål angående projektet skal stilles til ham.
 
 ![Logo](https://codingpirates.dk/wp-content/uploads/2016/09/Forside-Logo.png)
 
