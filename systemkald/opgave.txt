@@ -1,0 +1,13 @@
+# System kald
+
+1. Brug kalenderhjemmesiden til at skrive en fil på serveren der hedder KILROY.
+2. Brug kalenderhjemmesiden til at checke at du har skrevet filen.
+2. Brug kalenderhjemmesiden til at udskrive sin egen kildekode.
+
+## Hints
+
+Du kan bruge følgende Unix kommandoer til at løse opgaven:
+- `curl` til at kalde serveren direkte (`-X POST` sender et post request)
+- `touch` til at oprette en tom fil med et navn du vælger
+- `ls` til at vise indholdet af en mappe 
+- `cat` til at udskrive indholdet af en fil
