@@ -10,11 +10,11 @@ Det er ikke meningen at du skal bruge det du lærer her til at angribe andres se
 
 ## Struktur
 
-I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i en tekstfil, som ligger i samme mappe som serverkoden. Den nemmeste mission hedder helloworld og har følgende filer, som alle de andre missioner i øvrigt også har.
+I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i README.md, som ligger i samme mappe som serverkoden. Den nemmeste mission hedder helloworld og har følgende filer, som alle de andre missioner i øvrigt også har.
 
 ```
 └── helloworld
-    ├── opgave.txt
+    ├── README.md
     ├── server.py
     └── startserver.sh
 ```
@@ -37,9 +37,9 @@ cd helloworld
 Læs om missionen ved at åbne opgave-filen med f.eks. `cat` eller `less` kommandoen.
 
 ```
-cat opgave.txt
+cat README.md
 # eller
-less opgave.txt
+less README.md
 ```
 
 Når du har læst opgaven skal du starte serveren. Det gør du ved at køre et shellscript ved navn `./startserver.sh`, som ligger i samme mappe som opgaveteksten. Kør shellscriptet ved at skrive `./` foran scriptets filnavn i terminalen, hvilket fortæller terminalen at det program du forsøger at køre ligger i samme mappe hvor du lige befinder dig i.
