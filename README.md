@@ -13,7 +13,7 @@ Som sagt er det ikke meningen, at du skal bruge det du lærer her til at angribe
 
 Forskellige mennesker mener forskellige ting når de siger hacking. Her er hvad vi mener når vi siger hacking:
 
-- Hacking er at lære hvordan ting er bygget, forstå hvilken rolle hver bestanddel spiller og hvordan de fungerer
+- Hacking er at lære hvordan ting er bygget, forstå hvilken rolle hver bestanddel spiller og hvordan de fungerer som en helhed
 - Hacking er at pille ting fra hinanden og sætte dem sammen igen på nye og bedre måder
 - Hacking er at bruge ting på sjove måder som de egentligt ikke er designet til
 
