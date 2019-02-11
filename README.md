@@ -17,6 +17,10 @@ Vi hører tit om hacking i nyhederne, men forskellige mennesker mener tit noget 
 - Hacking er at pille ting fra hinanden og sætte dem sammen igen på nye og bedre måder
 - Hacking er at bruge ting på sjove måder, som de egentligt ikke er designet til
 
+Her er et billede af nogen der hacker:
+
+![Hackere](https://upload.wikimedia.org/wikipedia/commons/4/41/Solder_workshop_at_FIXME_Hackerspace%2C_Renens%2C_Lausanne_%282015-05-23_06.25.46_by_Mitch_Altman%29.jpg)
+
 ## Struktur for missioner
 
 I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i README.md, som ligger i samme mappe som serverkoden. Her er en oversigt over de filer du finder i alle missionerne
