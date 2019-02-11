@@ -38,9 +38,9 @@ af hvert, men den kan til gengæld let nulstilles igen. Raspberry Pi kører oper
 
 Du undrer dig måske over hvorfor vi bruger Linux og ikke f.eks. Windows eller Mac OS X, som du måske kender bedre. Årsagen er at langt de fleste servere i verden kører Linux. Selv ting du ikke tænker på som en computer kan være en computer der kører Linux, f.eks. et web camera, et køleskab eller en smart lyspære. Den slags computere der er indbygget i dagligdags ting hedder Internet of Things og det er en af årsagerne til at hacker selvforsvar bliver mere og mere vigtigt. I gamle dage kunne du måske ikke hacke en lyspære så nemt, men det kan du i dag!
 
-## Sådan gør du
+## Walkthrough til Mission: Hej Hacker!
 
-Her er en walkthrough til hejhacker missionen. Start med at åbne server-mappen:
+Start med at åbne server-mappen:
 
 ```
 cd hejhacker
