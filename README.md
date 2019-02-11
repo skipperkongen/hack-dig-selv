@@ -19,6 +19,10 @@ I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver
     └── startserver.sh
 ```
 
+Udover disse tre filer kan der godt være flere afhængigt af missionen. Scriptet `startserver.sh` kan bruges til at starte missionens server, som du bagefter kan prøve at hacke.
+
+
+
 ## Forudsætninger
 
 Projektet er designet til at køre på en billig Raspberry Pi computer. Den stakkels computer skal stå mål for lidt
