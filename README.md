@@ -4,9 +4,18 @@
 
 ![Logo](https://codingpirates.dk/wp-content/uploads/2016/09/Forside-Logo.png)
 
-I dette projekt vil du lære om hacking. Du kører forskellige serverprogrammer, som du bagefter selv hacker. På den måde lærer du hvad der gør en server sårbar og hvordan du kan forbedre den så den er sværere at hacke. Du vil lære at servere tit er sårbare fordi dem der har skrevet koden til dem ikke har tænkt sig ordentligt om!!
+I dette projekt vil du lære om hacking. At lære at hacke er lidt ligesom at gå til karate. Det er ikke meningen at du skal bruge det du har
+lært til at slå andre oven i hovedet. Du vil køre forskellige serverprogrammer, som du bagefter selv skal prøve hacke. På den måde lærer du hvad der gør en server sårbar og hvordan du kan forbedre den så den bliver sværere at hacke. Du vil lære at servere tit er sårbare fordi dem der har skrevet koden til dem ikke har tænkt sig ordentligt om!!
 
-Det er ikke meningen at du skal bruge det du lærer her til at angribe andres servere! Det er nemligt ulovligt. Tværtimod er det meningen at du skal lære at skrive kode, der er sværere at hacke, så onde hackere har færre muligheder for at angribe dig. Det er helt lovligt at angribe din egen server lige så tosset, som du vil. Du kan også aftale med en ven at i angriber hinandens servere, men husk altid at spørge om lov først! At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer. Vi synes at det er vigtigt at vi allesammen lærer om hacking, så vi kan hjælpe med at beskytte hinanden!
+Som sagt er det ikke meningen, at du skal bruge det du lærer her til at angribe andres servere! Det er nemligt ulovligt. Derimod er det helt lovligt at angribe din egen server lige så tosset du vil. Du kan også aftale med en ven at i angriber hinandens servere, men husk altid at spørge om lov først! Bare tænk på hvor irriteret du ville blive hvis nogen hackede dig. At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer og den bedste måde at lære hvordan du undgår at blive hacket! Vi synes at det er vigtigt at vi allesammen lærer om hacking, så vi kan hjælpe med at beskytte hinanden!
+
+## Hvad betyder hacking?
+
+Forskellige mennesker mener forskellige ting når de siger hacking. Her er hvad vi mener når vi siger hacking:
+
+- Hacking er at lære hvordan ting er bygget, forstå hvilken rolle hver bestanddel spiller og hvordan de fungerer
+- Hacking er at pille ting fra hinanden og sætte dem sammen igen på nye og bedre måder
+- Hacking er at bruge ting på sjove måder som de egentligt ikke er designet til
 
 ## Struktur
 
@@ -20,7 +29,6 @@ I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver
 ```
 
 Udover disse tre filer kan der godt være flere afhængigt af missionen. Scriptet `startserver.sh` kan bruges til at starte missionens server, som du bagefter kan prøve at hacke.
-
 
 
 ## Forudsætninger
