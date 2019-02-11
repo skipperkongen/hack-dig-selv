@@ -49,14 +49,14 @@ wget https://github.com/skipperkongen/hack-dig-selv/archive/master.zip
 Pak filen ud ved at unzippe den:
 
 ```
-master.zip
+unzip master.zip
 ```
 
 
 Start med at åbne server-mappen:
 
 ```
-cd hack-dig-selv/hejhacker
+cd hack-dig-selv-master/hejhacker
 ```
 
 Læs om missionen ved at åbne opgave-filen README.md, f.eks. med `cat` eller `less` kommandoen.
@@ -82,4 +82,4 @@ Nu har du forhåbentligt startet serveren. Se om du kan åbne dens hjemmeside i 
 http://{den IP addresse du har fundet frem til}/{den port du har fundet frem til}
 ```
 
-Hvis alt er gået godt vil du se teksten 'Hej hacker!' i din browser.
+Hvis alt er gået godt vil du se en hemmelig besked. Hvad er den?

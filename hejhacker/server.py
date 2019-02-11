@@ -4,4 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hej hacker!'
+    return "Hej hacker! Der er url'er i mosen!"
+
+ '
