@@ -10,10 +10,10 @@ Det er ikke meningen at du skal bruge det du lærer her til at angribe andres se
 
 ## Struktur
 
-I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i README.md, som ligger i samme mappe som serverkoden. Den nemmeste mission hedder helloworld og har følgende filer, som alle de andre missioner i øvrigt også har.
+I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i README.md, som ligger i samme mappe som serverkoden. Her er en oversigt over de filer du finder i alle missionerne
 
 ```
-└── helloworld
+└── <Missionens mappe>
     ├── README.md
     ├── server.py
     └── startserver.sh
