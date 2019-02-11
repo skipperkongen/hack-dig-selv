@@ -1,23 +1,23 @@
-# Hack dig selv
+# Hack Dig Selv
 
 > Dette projekt er udviklet af frivillige hos Coding Pirates på ITU. Ansvarlig for projektet er Pimin Konstantin Kefaloukos så alle spørgsmål angående projektet skal stilles til ham.
 
 ![Logo](https://codingpirates.dk/wp-content/uploads/2016/09/Forside-Logo.png)
 
 I dette projekt vil du lære om hacking. At lære at hacke er lidt ligesom at gå til karate. Det er ikke meningen at du skal bruge det du har
-lært til at slå andre oven i hovedet. Du vil køre forskellige serverprogrammer, som du bagefter selv skal prøve hacke. På den måde lærer du hvad der gør en server sårbar og hvordan du kan forbedre den så den bliver sværere at hacke. Du vil lære at servere tit er sårbare fordi dem der har skrevet koden til dem ikke har tænkt sig ordentligt om!!
+lært til at slå andre oven i hovedet. Med andre ord: du skal ikke bruge det du har lært her til at angribe andres servere! Det er nemligt ulovligt. Derimod er det helt lovligt at angribe din egen server lige så tosset du vil. Du kan også aftale med en ven at i angriber hinandens servere, men husk altid at spørge om lov først! Bare tænk på hvor irriteret du ville blive hvis nogen hackede dig. At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer og den bedste måde at lære hvordan du undgår at blive hacket! Vi synes at det er vigtigt at vi allesammen lærer om hacking, så vi kan hjælpe med at beskytte hinanden!
 
-Som sagt er det ikke meningen, at du skal bruge det du lærer her til at angribe andres servere! Det er nemligt ulovligt. Derimod er det helt lovligt at angribe din egen server lige så tosset du vil. Du kan også aftale med en ven at i angriber hinandens servere, men husk altid at spørge om lov først! Bare tænk på hvor irriteret du ville blive hvis nogen hackede dig. At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer og den bedste måde at lære hvordan du undgår at blive hacket! Vi synes at det er vigtigt at vi allesammen lærer om hacking, så vi kan hjælpe med at beskytte hinanden!
+Hack Dig Selv består af en række missioner, som du kan udføre for at lære om hacking. På hver mission starter du et nyt serverprogram, som du bagefter skal prøve at hacke eller måske skal du løse nogle andre opgaver. Du lærer hurtigt en masse om hvad der gør en server sårbar og også hvordan du kan forbedre serverens kode så den bliver sværere at hacke i fremtiden. Du lærer at servere tit er sårbare fordi dem, der har skrevet koden til dem, har glemt at tænkte sig ordentligt om!! På en af missionerne skal du bryde en hemmelig kode. Det er en form for hacking, der kaldes for "dekryptering".
 
 ## Hvad betyder hacking?
 
-Forskellige mennesker mener forskellige ting når de siger hacking. Her er hvad vi mener når vi siger hacking:
+Vi hører tit om hacking i nyhederne, men forskellige mennesker mener tit noget forskelligt når de bruger ordet hacking. Her er hvad vi mener med hacking:
 
 - Hacking er at lære hvordan ting er bygget, forstå hvilken rolle hver bestanddel spiller og hvordan de fungerer som en helhed
 - Hacking er at pille ting fra hinanden og sætte dem sammen igen på nye og bedre måder
 - Hacking er at bruge ting på sjove måder, som de egentligt ikke er designet til
 
-## Struktur
+## Struktur for missioner
 
 I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i README.md, som ligger i samme mappe som serverkoden. Her er en oversigt over de filer du finder i alle missionerne
 
