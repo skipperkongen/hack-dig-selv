@@ -40,13 +40,13 @@ Du undrer dig måske over hvorfor vi bruger Linux og ikke f.eks. Windows eller M
 
 ## Sådan gør du
 
-Her er en walkthrough til helloworld missionen. Start med at åbne server-mappen:
+Her er en walkthrough til hejhacker missionen. Start med at åbne server-mappen:
 
 ```
-cd helloworld
+cd hejhacker
 ```
 
-Læs om missionen ved at åbne opgave-filen med f.eks. `cat` eller `less` kommandoen.
+Læs om missionen ved at åbne opgave-filen README.md, f.eks. med `cat` eller `less` kommandoen.
 
 ```
 cat README.md
