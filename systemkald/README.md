@@ -5,7 +5,7 @@
 Missioner:
 1. Start server (`./startserver.sh`) på en maskine som gerne må dø
 1. Åben kalendersiden http://{IP ADDRESSE}:8082
-1. Print kalender for år 2020
+1. Brug kalendersiden til at udskrive kalenderen for år 2020
 1. Hack siden til at skrive en fil på serveren der hedder KILROY i samme mappe hvor server koden ligger
 1. Hack siden til at vise filerne i den mappe og check at du har skrevet filen
 1. Hack siden til at slette filen der hedder KILROY igen
