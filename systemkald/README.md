@@ -3,7 +3,7 @@
 **ADVARSEL**: Denne server er helt vildt usikker! Start den ikke på en maskine som du holder af eller som indeholder noget vigtigt, fordi der er en meget stor sandsynlighed for at den bliver reduceret til et rygende hul i jorden!
 
 Missioner:
-1. Start server (`./startserver.sh`)
+1. Start server (`./startserver.sh`) på en maskine som gerne må dø
 1. Åben kalendersiden http://{IP ADDRESSE}:8082
 1. Print kalender for år 2020
 1. Hack siden til at skrive en fil på serveren der hedder KILROY i samme mappe hvor server koden ligger
