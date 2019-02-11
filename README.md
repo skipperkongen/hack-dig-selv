@@ -15,7 +15,7 @@ Forskellige mennesker mener forskellige ting når de siger hacking. Her er hvad 
 
 - Hacking er at lære hvordan ting er bygget, forstå hvilken rolle hver bestanddel spiller og hvordan de fungerer som en helhed
 - Hacking er at pille ting fra hinanden og sætte dem sammen igen på nye og bedre måder
-- Hacking er at bruge ting på sjove måder som de egentligt ikke er designet til
+- Hacking er at bruge ting på sjove måder, som de egentligt ikke er designet til
 
 ## Struktur
 
