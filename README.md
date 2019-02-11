@@ -54,9 +54,7 @@ cat README.md
 less README.md
 ```
 
-Når du har læst opgaven kan du starte serveren. Det gør du ved at køre et shellscript ved navn `./startserver.sh`, som ligger i samme mappe som opgaveteksten. Kør shellscriptet ved at skrive `./` foran scriptets filnavn i terminalen, hvilket fortæller terminalen at det program du forsøger at køre ligger i samme mappe hvor du lige befinder dig i.
-
-> Hint: brug `pwd` og `ls` kommandoerne til at se hvor du befinder dig og hvilke filer der er i den mappe, som du befinder dig i.
+Når du har læst opgaven kan du starte serveren. Det gør du ved at køre et shellscript ved navn `./startserver.sh`, som ligger i samme mappe som opgaveteksten. Et shellscript er et lille program; typisk bruger vi shellscripts til at automatisere ting vi vil gøre, f.eks. at starte en server på en bestemt måde. Kør shellscriptet ved at skrive `./` foran scriptets filnavn i terminalen, hvilket fortæller terminalen at det program du forsøger at køre ligger i samme mappe hvor du lige befinder dig i.
 
 ```
 # Start serveren
