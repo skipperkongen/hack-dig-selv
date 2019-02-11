@@ -13,8 +13,15 @@ Missioner:
 
 ## Hints
 
-Du kan bruge følgende Unix kommandoer til at løse hacking opgaverne:
-- `curl` til at kalde en server direkte (`-X POST` sender et post request, `-F 'key=value'` sender form data)
+Hvilken besked bliver sendt til serveren når du vælger et årstal og derefter trykker på submit knappen?
+> Du kan se hele beskeden der bliver sendt ved at åbne din browsers udviklerværktøj før du trykker på submit
+
+Hvordan kan du sende en anden besked til serveren end et af årstallene fra menuen?
+> Du kan bruge unix-kommandoen `curl` til at sende en skræddersyet besked til en HTTP server
+
+
+Forklaring af unix-kommandoer:
+- `curl` til at kalde en server direkte (`-X POST` sender et POST request, `-F 'key=value'` sender form data)
 - `touch` til at oprette en tom fil med et navn du vælger, f.eks. KILROY.
 - `ls` til at vise alle synlige filer i en mappe
 - `rm` til at slette en fil
