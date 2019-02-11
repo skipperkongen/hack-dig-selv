@@ -23,7 +23,7 @@ Her er et billede af nogen der hacker:
 
 ## Struktur for missioner
 
-I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du kan starte og derefter løse en eller flere opgaver, som er beskrevet i README.md, som ligger i samme mappe som serverkoden. Her er en oversigt over de filer du finder i alle missionerne
+I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du starte serveren og derefter kan du løse en eller flere opgaver, som er beskrevet i README.md filen i samme mappe som serverkoden. Her er en oversigt over de filer du finder i alle missionerne
 
 ```
 └── <Missionens mappe>
