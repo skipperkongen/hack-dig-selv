@@ -1,5 +1,7 @@
 # Mission: Systemkald!
 
+![Old Computer](https://upload.wikimedia.org/wikipedia/commons/9/9e/CoCo3system.jpg)
+
 **ADVARSEL**: Denne server er helt vildt usikker! Start den ikke på en maskine som du holder af eller som indeholder noget vigtigt, fordi der er en meget stor sandsynlighed for at den bliver reduceret til et rygende hul i jorden!
 
 Missioner:
