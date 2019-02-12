@@ -13,8 +13,8 @@ Hack Dig Selv består af en række missioner, som du kan udføre for at lære om
 
 Projektet indeholder følgende missioner, som du kan løse for at lære om hacking og IT sikkerhed:
 
-- [Hej Hacker!](https://github.com/skipperkongen/hack-dig-selv/tree/master/hejhacker): lær at starte en webserver og forbinde til den
-- [Operation: Systemkald](https://github.com/skipperkongen/hack-dig-selv/tree/master/systemkald): dit første hack af en server, som stoler lidt for meget på de beskeder den modtager fra sine brugere.
+- I [Hej Hacker!](https://github.com/skipperkongen/hack-dig-selv/tree/master/hejhacker) lærer du at starte en webserver og forbinde til den med en browser
+- I [Operation: Systemkald](https://github.com/skipperkongen/hack-dig-selv/tree/master/systemkald) vil du udføre dit første hack af en server, som stoler lidt for meget på de beskeder den modtager fra sine brugere. Du vil lære at man altid skal tjekke de beskeder man modtager fra brugere.
 
 ## Hvad betyder hacking?
 
