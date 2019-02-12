@@ -16,7 +16,7 @@ Projektet indeholder følgende missioner, som du kan løse for at lære om hacki
 - I [Hej Hacker!](https://github.com/skipperkongen/hack-dig-selv/tree/master/hejhacker) lærer du at starte en webserver og forbinde til den med en browser.
 - I [Operation: Systemkald](https://github.com/skipperkongen/hack-dig-selv/tree/master/systemkald) vil du udføre dit første hack af en server, som stoler lidt for meget på de beskeder den modtager fra sine brugere. Du vil lære at man altid skal tjekke de beskeder man modtager fra brugere, specielt hvis man bruger dem som input til andre programmer.
 - I [Dødelig Indsprøjtning](https://github.com/skipperkongen/hack-dig-selv/tree/master/indsproejtning) vil du lære om SQL injection. Du lærer endnu engang at man altid skal tjekke beskeder fra brugere hvis de skal bruges til at indsætte information i en database. I værste fald kan en bruger slette hele din database hvis du ikke passer på.
-- I [Sort Snak](https://github.com/skipperkongen/hack-dig-selv/tree/master/sortsnak) stifter du bekendtskab med hemmelige beskeder. Du vil lære hvordan du kan knække koden for nogle simple kryptografiske metoder, som blev benyttet i mange tusind år af herskere jorden rundt til at sende hemmelige beskeder til og fra deres spioner.
+- I [Sort Snak](https://github.com/skipperkongen/hack-dig-selv/tree/master/sortsnak) stifter du bekendtskab med hemmelige beskeder. Du vil lære hvordan du kan knække koden for nogle simple kryptografiske metoder, som blev benyttet i mange tusind år af herskere jorden rundt til at modtage hemmelige beskeder fra deres spioner.
 
 ## Hvad betyder hacking?
 
