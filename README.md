@@ -9,6 +9,13 @@ lært her til at slå andre oven i hovedet (hacke dem). I stedet kunne du hjælp
 
 Hack Dig Selv består af en række missioner, som du kan udføre for at lære om hacking. På hver mission starter du et nyt serverprogram, som du bagefter skal prøve at hacke eller måske skal du løse nogle andre opgaver. Du lærer hurtigt en masse om hvad der gør en server sårbar og også hvordan du kan forbedre serverens kode så den bliver sværere at hacke i fremtiden. Du lærer at servere tit er sårbare fordi dem, der har skrevet koden til dem, har glemt at tænkte sig ordentligt om!! På en af missionerne skal du bryde en hemmelig kode. Det er en form for hacking, der kaldes for "dekryptering".
 
+## Missioner
+
+Projektet indeholder følgende missioner, som du kan løse for at lære om hacking og IT sikkerhed:
+
+- [Hej Hacker!](https://github.com/skipperkongen/hack-dig-selv/tree/master/hejhacker): lær at starte en webserver og forbinde til den
+- [Operation: Systemkald](https://github.com/skipperkongen/hack-dig-selv/tree/master/systemkald): dit første hack af en server, som stoler lidt for meget på de beskeder den modtager fra sine brugere.
+
 ## Hvad betyder hacking?
 
 Vi hører tit om hacking i nyhederne, men forskellige mennesker mener tit noget forskelligt når de bruger ordet hacking. Her er hvad vi mener med hacking:
