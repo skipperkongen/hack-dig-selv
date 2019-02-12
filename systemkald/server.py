@@ -12,7 +12,7 @@ def systemkald():
         # Serious vulnerability!!!! execute unsanitised commands
         kommando = 'cal {}'.format(year)
         kommando_output = os.popen(kommando).read()
-        output = 'Jeg kørte unix-kommandoen:\n> {}\n\nUdskrift fra systemet:\n\n{}'.format(
+        output = 'Jeg kørte følgende unix-kommando på serveren:\n> {}\n\nBesked fra serveren:\n\n{}'.format(
             kommando,
             kommando_output
         )

@@ -2,33 +2,45 @@
 
 ![Old Computer](https://upload.wikimedia.org/wikipedia/commons/9/9e/CoCo3system.jpg)
 
-**ADVARSEL**: Denne server er helt vildt usikker! Start den ikke på en maskine som du holder af eller som indeholder noget vigtigt, fordi der er en meget stor sandsynlighed for at den bliver reduceret til et rygende hul i jorden!
+**ADVARSEL**: Denne server er helt vildt usikker! Start den ikke på en maskine som du holder af eller som indeholder noget vigtigt, fordi der er en meget stor sandsynlighed for at serveren bliver til et rygende hul i jorden!
 
 Missioner:
-1. Start server (`./startserver.sh`) på en maskine som gerne må dø
-1. Åben kalendersiden http://{IP ADRESSE}:8082
-1. Brug kalendersiden til at udskrive kalenderen for år 2020
-1. Hack siden til at skrive en fil på serveren der hedder KILROY i samme mappe hvor server koden ligger. Hvis det lykkes vil du se at siden er blevet hacket hvis du genindlæser den.
-1. Hack siden for at slette filen der hedder KILROY igen
-1. Undersøg serverkoden og find ud af hvorfor den er så usikker og hvordan du kan rette det.
 
-## Hints
+1. Spørg din lærer om serverens IP adresse hvis du ikke allerede kender den.
+1. Åben siden [http://{IP ADRESSE}:8082](http://{IP ADRESSE}:8082) i din browser.
+1. Brug siden til at udskrive kalenderen for år 2019.
+    - Du kan se i svaret fra serveren at den har kørt unix-kommandoen `cal 2019` for at udskrive kalenderen for 2019.
+    - Hvis en server lader brugere køre kommandoer direkte på serveren, bør du altid straks blive mistænksom! Man kan få brug for et meget stort plaster til serveren hvis man ikke passer meget godt på!
+    - Problemet med denne server er, at den blindt stoler på at brugeren sender et årstal, f.eks. 2019, til serveren. Den tager årstallet og indsætter det efter et kommando ved navn `cal` som kan udskrive kalendere. Om lidt vil du se hvorfor det er et meget stort problem!
+1. Undersøg hvilket HTTP request browseren sender til serveren når du vælger et årstal og derefter trykker på submit knappen.
+    - Hyper-text Transfer Protokol (HTTP) er det sprog, som browsere og servere taler med hinanden for at sende beskeder til hinanden over internettet. F.eks. sender din browser et HTTP `GET` request når den indlæser siden og typisk et HTTP `POST` request hvis den vil sende data til serveren.
+    - Brug din browsers udviklerværktøj til at se kildekoden til siden.
+    - Find afsnittet som indeholder en `form`.
+    - Undersøg formen og find ud af om browseren sender data til serveren med et GET request eller et POST request når du trykker submit? Dette bestemmes af `method` attributen på form-tagget.
+    - Årstallet bliver sendt til serveren i en variabel. Hvilket variabel-navn bruger formen til at gemme årstallet? Du kan se denne oplysning i select-taggets `name` attribut.
+1. Nu har du lært lidt om hvordan siden fungerer. Åben nu et terminal vindue for at fortsætte.
+1. Brug unix-kommandoen `curl` til at sende et HTTP request til serveren. Vi starter med at sende den samme besked til serveren som browseren sender.
+    - Skriv `curl http://{IP ADRESSE}:8082/`. Hvad ser du?
+    - Prøv at ændre kommandoen til `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/`. Hvad ser du nu?
+1. Nu skal vi prøve noget sjovt. I stedet for kun at sende et årstal til serveren, vil vi sende et årstal plus lidt mere.
+    - Skriv `curl -X POST -F 'year=2018 && echo hej' http://{IP ADRESSE}:8082/`. Hvad ser du nu?
+    - Serveren forventer et årstal, som den vil sætte ind efter `cal` kommandoen, f.eks `cal 2018`. Denne gang sendte vi et årstal efterfulgt af `&&echo hej` hvilket resulterer i at kommandoen `cal 2018 && echo hej` bliver udført på serveren, hvilket er to kommandoer i stedet for én! Først kører den `cal 2018` og bagefter kører den `echo hej`, hvilket udskriver beskeden "hej". I Unix kan du skrive `&&` mellem to unix-kommandoer for at udføre dem efter hinanden (hvis kommando 1 ikke fejler).
+    - Vi har nu snydt serveren til at udføre en ekstra kommando, fordi den blindt stolede på at vi kun sendte et årstal.
+1. Nu har vi fundet ud af at serveren har en kæmpe svaghed. Nu vil vi prøve at efterlade en lille besked (en fil ved navn KILROY) på serveren, som bevis på at den er blevet hacket.
+    - I stedet for at udføre kommandoen `cal 2018 && echo hej` vil vi nu udføre `cal 2018 && touch KILROY`.  Dette opretter en tom fil på serveren ved navn `KILROY`. Unix kommandoen `touch` kan nemlig bruges til at oprette en tom fil med et navn du selv vælger, f.eks. `touch KILROY`.
+    - Modificer `curl` kommandoen fra før til at sende en ny besked, som udfører kommandoen `cal 2018 && touch KILROY` på serveren.
+    - Hvis det lykkes vil du se at siden er blevet hacket når du genindlæser den i browseren.
+1. Prøv om du kan fjerne filen `KILROY` igen ved at sende en ny besked til serveren med `curl`.
+    - Denne gang skal du bruge Unix kommandoen `rm` til at slette filen. Vi vil altså gerne udføre kommandoen `cal 2018 && rm KILROY`
+    - Modificer `curl` kommandoen endnu en gang, så vi sletter filen.
+1. Hvis du har mod på det, så undersøg serverkoden og find ud af hvorfor den er så usikker og hvordan du kan rette det.
 
-Undersøg hvilken besked, der bliver sendt til serveren når du vælger et årstal og derefter trykker på submit knappen
+## Unix kommandoer for denne mission
 
-- *Hint*: Du kan se hele beskeden der bliver sendt ved at åbne din browsers udviklerværktøj før du trykker på submit
+Her er de unix kommandoer, som du har brugt på denne mission:
 
-Undersøg hvordan du kan sende en anden besked til serveren end bare et årstal fra menuen?
-
-- *Hint*: Du kan bruge unix-kommandoen `curl` til at sende en skræddersyet besked til en HTTP server
-- *Hint*: prøv at bruge unix-kommandoen: `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/` og se hvad du får tilbage.
-- *Hint*: prøv nu at bruge unix-kommandoen: `curl -X POST -F 'year=2018&&ls' http://{IP ADRESSE}:8082/` og se hvad du får tilbage.
-- *Hint*: Se en oversigt over nogle unix-kommandoer herunder og vælg en der kan bruges til opgaven
-
-Unix kommandoer:
-
-- Brug `curl` til at kalde en server direkte (`-X POST` sender et POST request, `-F 'key=value'` sender form data)
-- Brug `touch` til at oprette en tom fil med et navn du vælger, f.eks. `touch MIN_FIL.txt`
-- Brug `ls` til at vise alle synlige filer i en mappe
-- Brug `rm` til at slette en fil
-- Brug `&&` mellem to kommandoer for at udføre kommando 2 hvis kommando 1 gik godt, f.eks. `touch MIN_FIL.txt && ls`
+- Brug `curl` til at sende en HTTP besked til en server (`-X POST` for at sende et POST request, `-F 'key=value'` for at sende form data).
+- Brug `touch` til at oprette en tom fil med et navn du vælger, f.eks. `touch MIN_FIL.txt`.
+- Brug `echo` til at printe en besked.
+- Brug `ls` til at udskrive alle synlige filer i en mappe.
+- Brug `&&` mellem to kommandoer for at udføre kommando 2 hvis kommando 1 gik godt, f.eks. `touch MIN_FIL.txt && ls`.
