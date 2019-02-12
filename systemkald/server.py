@@ -10,7 +10,15 @@ def systemkald():
     if request.method == 'POST':
         year = request.form['year']
         # Serious vulnerability!!!! execute unsanitised commands
-        output = os.popen('cal {}'.format(year)).read()
+        kommando = 'cal {}'.format(year)
+        kommando_output = os.popen(kommando).read()
+        output = 'Jeg kørte unix-kommandoen:\n> {}\n\nUdskrift fra systemet:\n\n{}'.format(
+            kommando,
+            kommando_output
+        )
         return Response(output, mimetype='text/plain')
     elif request.method == 'GET':
-        return render_template('form.html')
+        if os.path.isfile('KILROY'):
+            return render_template('hacked.html')
+        else:
+            return render_template('form.html')

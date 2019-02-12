@@ -6,25 +6,26 @@
 
 Missioner:
 1. Start server (`./startserver.sh`) på en maskine som gerne må dø
-1. Åben kalendersiden http://{IP ADDRESSE}:8082
+1. Åben kalendersiden http://{IP ADRESSE}:8082
 1. Brug kalendersiden til at udskrive kalenderen for år 2020
-1. Hack siden til at skrive en fil på serveren der hedder KILROY i samme mappe hvor server koden ligger
-1. Hack siden til at vise filerne i den mappe og check at du har skrevet filen
-1. Hack siden til at slette filen der hedder KILROY igen
+1. Hack siden til at skrive en fil på serveren der hedder KILROY i samme mappe hvor server koden ligger. Hvis det lykkes vil du se at siden er blevet hacket hvis du genindlæser den.
+1. Hack siden for at slette filen der hedder KILROY igen
 1. Undersøg serverkoden og find ud af hvorfor den er så usikker og hvordan du kan rette det.
 
 ## Hints
 
-Hvilken besked bliver sendt til serveren når du vælger et årstal og derefter trykker på submit knappen?
-- Du kan se hele beskeden der bliver sendt ved at åbne din browsers udviklerværktøj før du trykker på submit
+Undersøg hvilken besked, der bliver sendt til serveren når du vælger et årstal og derefter trykker på submit knappen
+- Hint: Du kan se hele beskeden der bliver sendt ved at åbne din browsers udviklerværktøj før du trykker på submit
 
-Hvordan kan du sende en anden besked til serveren end et af årstallene fra menuen?
-- Du kan bruge unix-kommandoen `curl` til at sende en skræddersyet besked til en HTTP server
+Undersøg hvordan du kan sende en anden besked til serveren end bare et årstal fra menuen?
+- Hint: Du kan bruge unix-kommandoen `curl` til at sende en skræddersyet besked til en HTTP server
+- Hint: prøv at bruge unix-kommandoen: `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/` og se hvad du får tilbage.
+- Hint: prøv nu at bruge unix-kommandoen: `curl -X POST -F 'year=2018&&ls' http://{IP ADRESSE}:8082/` og se hvad du får tilbage.
+- Hint: Se en oversigt over nogle unix-kommandoer herunder og vælg en der kan bruges til opgaven
 
-
-Hvad gør de forskellige unix-kommandoer du skal bruge for at løse denne mission?
+Unix kommandoer:
 - Brug `curl` til at kalde en server direkte (`-X POST` sender et POST request, `-F 'key=value'` sender form data)
-- Brug `touch` til at oprette en tom fil med et navn du vælger, f.eks. KILROY.
+- Brug `touch` til at oprette en tom fil med et navn du vælger, f.eks. `touch MIN_FIL.txt`
 - Brug `ls` til at vise alle synlige filer i en mappe
 - Brug `rm` til at slette en fil
-- Brug `kommando 1 && kommando 2` udfører kommando 2 hvis kommando 1 gik godt.
+- Brug `&&` mellem to kommandoer for at udføre kommando 2 hvis kommando 1 gik godt, f.eks. `touch MIN_FIL.txt && ls`
