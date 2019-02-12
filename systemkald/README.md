@@ -8,7 +8,7 @@
 
 Serveren har et program til at udskrive kalendere.
 
-- Åben serverens hjemmeside [http://{IP ADRESSE}:8082](http://{IP ADRESSE}:8082) i din browser. Spørg din lærer om serverens IP adresse hvis du ikke allerede kender den.
+- Åben serverens hjemmeside [http://ipadresse:8082](http://ipadresse:8082) i din browser. Spørg din lærer om serverens IP adresse hvis du ikke allerede kender den.
 - Brug siden til at udskrive kalenderen for år 2019.
 
 Du kan se i svaret fra serveren at den har kørt unix-kommandoen `cal 2019` for at udskrive kalenderen for 2019.
