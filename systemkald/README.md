@@ -2,32 +2,33 @@
 
 ![Old Computer](https://upload.wikimedia.org/wikipedia/commons/9/9e/CoCo3system.jpg)
 
-**ADVARSEL**: Denne server er helt vildt usikker! Start den ikke på en maskine som du holder af eller som indeholder noget vigtigt, fordi der er en meget stor sandsynlighed for at serveren bliver til et rygende hul i jorden!
+**ADVARSEL**: Den server du nu vil møde er helt vildt usikker! Den stoler blind på beskeder, som den modtager fra vildt fremmede mennesker. Den udfører meget farlige kommandoer uden at undersøge dem først. Stol aldrig på en maskine, som blindt stoler på hvem som helst.
 
 ## Mission 1: Udskriv kalender
 
-1. Spørg din lærer om serverens IP adresse hvis du ikke allerede kender den.
-1. Åben siden [http://{IP ADRESSE}:8082](http://{IP ADRESSE}:8082) i din browser.
-1. Brug siden til at udskrive kalenderen for år 2019.
-    - Du kan se i svaret fra serveren at den har kørt unix-kommandoen `cal 2019` for at udskrive kalenderen for 2019.
-    - Hvis en server lader brugere køre kommandoer direkte på serveren, bør du altid straks blive mistænksom! Man kan få brug for et meget stort plaster til serveren hvis man ikke passer meget godt på!
-    - Problemet med denne server er, at den blindt stoler på at brugeren sender et årstal, f.eks. 2019, til serveren. Den tager årstallet og indsætter det efter et kommando ved navn `cal` som kan udskrive kalendere. Om lidt vil du se hvorfor det er et meget stort problem!
+Serveren har et program til at udskrive kalendere.
+
+- Åben serverens hjemmeside [http://{IP ADRESSE}:8082](http://{IP ADRESSE}:8082) i din browser. Spørg din lærer om serverens IP adresse hvis du ikke allerede kender den.
+- Brug siden til at udskrive kalenderen for år 2019.
+
+Du kan se i svaret fra serveren at den har kørt unix-kommandoen `cal 2019` for at udskrive kalenderen for 2019. Problemet er, at serveren blindt stoler på at du har sendt et årstal, f.eks. 2019. Men hvad nu hvis du sender noget andet? Serveren tager hvad den formoder er et årstal og kombinerer det med kommandoen `cal`, som udskriver en kalender. Om lidt vil du se hvorfor det er et meget stort problem!
 
 # Mission 2: Lær hvordan siden fungerer
 
-1. Undersøg hvilket HTTP request browseren sender til serveren når du vælger et årstal og derefter trykker på submit knappen.
-    - Hyper-text Transfer Protokol (HTTP) er det sprog, som browsere og servere taler med hinanden for at sende beskeder til hinanden over internettet. F.eks. sender din browser et HTTP `GET` request når den indlæser siden og typisk et HTTP `POST` request hvis den vil sende data til serveren.
-    - Brug din browsers udviklerværktøj til at se kildekoden til siden.
-    - Find afsnittet som indeholder en `form`.
-    - Undersøg formen og find ud af om browseren sender data til serveren med et GET request eller et POST request når du trykker submit? Dette bestemmes af `method` attributen på form-tagget.
-    - Årstallet bliver sendt til serveren i en variabel. Hvilket variabel-navn bruger formen til at gemme årstallet? Du kan se denne oplysning i select-taggets `name` attribut.
+Undersøg hvilket HTTP request browseren sender til serveren når du vælger et årstal og derefter trykker på submit knappen. Hyper-text Transfer Protokol (HTTP) er det sprog, som browsere og servere taler med hinanden for at sende beskeder til hinanden over internettet. F.eks. sender din browser et HTTP `GET` request når den indlæser siden og typisk et HTTP `POST` request hvis den vil sende data til serveren.
+
+- Brug din browsers udviklerværktøj til at se kildekoden til siden.
+- Find afsnittet som indeholder en `form`.
+- Undersøg formen og find ud af om browseren sender data til serveren med et GET request eller et POST request når du trykker submit? Dette bestemmes af `method` attributen på form-tagget.
+- Årstallet bliver sendt til serveren i en variabel. Hvilket variabel-navn bruger formen til at gemme årstallet? Du kan se denne oplysning i select-taggets `name` attribut.
 
 # Mission 3: Send beskeder til serveren
 
-1. Nu har du lært lidt om hvordan siden fungerer. Åben nu et terminal vindue for at fortsætte.
-1. Brug unix-kommandoen `curl` til at sende et HTTP request til serveren. Vi starter med at sende den samme besked til serveren som browseren sender.
-    - Skriv `curl http://{IP ADRESSE}:8082/`. Hvad ser du?
-    - Prøv at ændre kommandoen til `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/`. Hvad ser du nu?
+Nu har du lært lidt om hvordan siden fungerer. Åben nu et terminal vindue for at fortsætte.
+
+- Brug unix-kommandoen `curl` til at sende et HTTP request til serveren. Vi starter med at sende den samme besked til serveren som browseren sender.
+- Skriv `curl http://{IP ADRESSE}:8082/`. Hvad ser du?
+- Prøv at ændre kommandoen til `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/`. Hvad ser du nu?
 
 # Mission 4: Hack serveren
 
