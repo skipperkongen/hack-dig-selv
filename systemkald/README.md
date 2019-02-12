@@ -17,7 +17,7 @@ Problemet er, at serveren blindt stoler på, at du har sendt den et årstal, f.e
 
 Serveren kombinerer hvad den formoder er et årstal og med kommandoen `cal`, hvilket giver kommandoen `cal <ÅRSTAL>`. Om lidt vil du se hvorfor det er et meget stort problem!
 
-# Mission 2: Lær hvordan siden fungerer
+## Mission 2: Lær hvordan siden fungerer
 
 Undersøg hvilket HTTP request browseren sender til serveren når du vælger et årstal og derefter trykker på submit knappen. Hyper-text Transfer Protokol (HTTP) er det sprog, som browsere og servere taler med hinanden for at sende beskeder til hinanden over internettet. F.eks. sender din browser et HTTP `GET` request når den indlæser siden og typisk et HTTP `POST` request hvis den vil sende data til serveren.
 
@@ -26,7 +26,7 @@ Undersøg hvilket HTTP request browseren sender til serveren når du vælger et 
 - Undersøg formen og find ud af om browseren sender data til serveren med et GET request eller et POST request når du trykker submit? Dette bestemmes af `method` attributen på form-tagget.
 - Årstallet bliver sendt til serveren i en variabel. Hvilket variabel-navn bruger formen til at gemme årstallet? Du kan se denne oplysning i select-taggets `name` attribut.
 
-# Mission 3: Send beskeder til serveren
+## Mission 3: Send beskeder til serveren
 
 Nu har du lært lidt om hvordan siden fungerer. Åben nu et terminal vindue for at fortsætte.
 
@@ -34,7 +34,7 @@ Nu har du lært lidt om hvordan siden fungerer. Åben nu et terminal vindue for 
 - Skriv `curl http://{IP ADRESSE}:8082/`. Hvad ser du?
 - Prøv at ændre kommandoen til `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/`. Hvad ser du nu?
 
-# Mission 4: Hack serveren
+## Mission 4: Hack serveren
 
 Nu skal vi prøve noget sjovt. I stedet for kun at sende et årstal til serveren, vil vi sende et årstal plus lidt mere.
 
