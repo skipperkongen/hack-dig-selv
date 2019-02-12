@@ -15,7 +15,7 @@ Du kan se i svaret fra serveren at den har kørt unix-kommandoen `cal 2019` for 
 
 Problemet er, at serveren blindt stoler på, at du har sendt den et årstal, f.eks. 2019. Men hvad nu hvis du sender noget andet eller mere? F.eks. et årstal og en besked om at serveren skal hacke sig selv?
 
-Serveren tager hvad den formoder er et årstal og kombinerer det med kommandoen `cal`, som udskriver en kalender. Om lidt vil du se hvorfor det er et meget stort problem!
+Serveren kombinerer hvad den formoder er et årstal og med kommandoen `cal`, hvilket giver kommandoen `cal <ÅRSTAL>`. Om lidt vil du se hvorfor det er et meget stort problem!
 
 # Mission 2: Lær hvordan siden fungerer
 
