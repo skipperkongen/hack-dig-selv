@@ -1,8 +1,6 @@
 # Hack Dig Selv
 
-> Dette projekt er udviklet af frivillige hos Coding Pirates på ITU. Ansvarlig for projektet er Pimin Konstantin Kefaloukos så alle spørgsmål angående projektet skal stilles til ham.
-
-![Logo](https://codingpirates.dk/wp-content/uploads/2016/09/Forside-Logo.png)
+> Dette projekt er udviklet af Pimin Konstantin Kefaloukos. Alle spørgsmål angående projektet skal stilles til ham.
 
 I dette projekt vil du lære om hacking. At lære at hacke er lidt ligesom at gå til karate: du skal ikke bruge det du har
 lært her til at slå andre oven i hovedet (hacke dem). I stedet kunne du hjælpe dem så de ikke bliver hacket! Med andre ord: det er ulovligt at angribe andres servere uden tilladelse og det er noget vi tager meget alvorligt i Coding Pirates! Derimod er det helt lovligt at hacke din egen server lige så tosset du vil. Du kan også aftale med en ven at i hacker hinandens servere, men husk *altid* at spørge om lov først! Bare tænk på hvor irriteret du ville blive hvis nogen hackede dig! At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer og den bedste måde at lære hvordan du undgår at blive hacket!
