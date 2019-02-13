@@ -2,25 +2,25 @@
 
 > Dette projekt er udviklet af Pimin Konstantin Kefaloukos til børn som vil lære om hacking på en ansvarlig måde
 
-I dette projekt vil du lære om hacking. At lære at hacke er lidt ligesom at gå til karate: du skal ikke bruge det du har
-lært her til at slå andre oven i hovedet (hacke dem). I stedet kunne du hjælpe dem så de ikke bliver hacket! Med andre ord: det er ulovligt at angribe andres servere uden tilladelse og det er noget vi tager meget alvorligt i Coding Pirates! Derimod er det helt lovligt at hacke din egen server lige så tosset du vil. Du kan også aftale med en ven at i hacker hinandens servere, men husk *altid* at spørge om lov først! Bare tænk på hvor irriteret du ville blive hvis nogen hackede dig! At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer og den bedste måde at lære hvordan du undgår at blive hacket!
+I dette projekt kan du lære om hacking. At lære at hacke er lidt ligesom at gå til karate: du skal ikke bruge det du har
+lært her til at hacke andre uden deres tilladelse. I stedet kunne du hjælpe dem så de ikke bliver hacket! Det er nemlig ulovligt at hacke andres servere uden tilladelse og det er noget vi tager meget alvorligt i Coding Pirates! Derimod er det helt lovligt at hacke din egen server lige så tosset du vil. Du kan også aftale med en ven at i hacker hinandens servere, men husk *altid* at spørge om lov først! Bare tænk på hvor irriteret du ville blive hvis nogen hackede dig! At hacke sig selv er måske den bedste måde at lære om hvordan hacking fungerer og den bedste måde at lære hvordan du undgår at blive hacket!
 
-Hack Dig Selv består af en række missioner, som du kan udføre for at lære om hacking. På hver mission starter du et nyt serverprogram, som du bagefter skal prøve at hacke eller måske skal du løse nogle andre opgaver. Du lærer hurtigt en masse om hvad der gør en server sårbar og også hvordan du kan forbedre serverens kode så den bliver sværere at hacke i fremtiden. Du lærer at servere tit er sårbare fordi dem, der har skrevet koden til dem, har glemt at tænkte sig ordentligt om!! På en af missionerne skal du bryde en hemmelig kode. Det er en form for hacking, der kaldes for "dekryptering".
+Hack Dig Selv består af en række missioner, som du kan udføre for at lære om hacking. I hver mission starter du et nyt serverprogram, som du bagefter kan prøve at hacke eller løse andre opgaver. Du lærer hurtigt en masse om hvad der gør en server sårbar og også hvordan du kan forbedre serverens kode så den bliver sværere at hacke i fremtiden. Du lærer at servere tit er sårbare fordi dem, der har skrevet koden til dem, har glemt at tænkte sig ordentligt om!! På en af missionerne skal du bryde en hemmelig kode. Det er en form for hacking, der kaldes for "dekryptering".
 
 ## Missioner
 
 Projektet indeholder følgende missioner, som du kan løse for at lære om hacking og IT sikkerhed:
 
 - I [Hej Hacker!](https://github.com/skipperkongen/hack-dig-selv/tree/master/hejhacker) lærer du at starte en webserver og forbinde til den med en browser.
-- I [Operation: Systemkald](https://github.com/skipperkongen/hack-dig-selv/tree/master/systemkald) vil du udføre dit første hack af en server, som stoler lidt for meget på de beskeder den modtager fra sine brugere. Du vil lære at man altid skal tjekke de beskeder man modtager fra brugere, specielt hvis man bruger dem som input til andre programmer.
+- I [Operation: Systemkald](https://github.com/skipperkongen/hack-dig-selv/tree/master/systemkald) vil du udføre dit første hack af en server. Problemet med serveren er, at den stoler lidt for meget på sine brugere. Du vil lære at man altid skal tjekke de beskeder man modtager fra brugere, specielt hvis man bruger dem som input til andre programmer.
 - I [Dødelig Indsprøjtning](https://github.com/skipperkongen/hack-dig-selv/tree/master/indsproejtning) (kommer snart) vil du lære om SQL injection. Du lærer endnu engang at man altid skal tjekke beskeder fra brugere hvis de skal bruges til at indsætte information i en database. I værste fald kan en bruger slette hele din database hvis du ikke passer på.
-- I [Sort Snak](https://github.com/skipperkongen/hack-dig-selv/tree/master/sortsnak) (kommer snart) stifter du bekendtskab med hemmelige beskeder. Du vil lære hvordan du kan knække koden for nogle simple kryptografiske metoder, som blev benyttet i mange tusind år af herskere til at modtage hemmelige beskeder fra deres spioner.
+- I [Sort Snak](https://github.com/skipperkongen/hack-dig-selv/tree/master/sortsnak) (kommer snart) lærer du om hemmelige beskeder. Du vil lære hvordan du kan knække koden og læse beskeder, som ellers ser ulæselige ud. Disse metoder er blevet brugt i mange tusind år af herskere til at modtage hemmelige beskeder fra deres spioner.
 
 ## Hvad betyder hacking?
 
 Vi hører tit om hacking i nyhederne, men forskellige mennesker mener tit noget forskelligt når de bruger ordet hacking. Her er hvad vi mener med hacking:
 
-- Hacking er at lære hvordan ting er bygget, forstå hvilken rolle hver bestanddel spiller og hvordan de fungerer som en helhed
+- Hacking er at lære hvordan ting er bygget og fungerer
 - Hacking er at pille ting fra hinanden og sætte dem sammen igen på nye og bedre måder
 - Hacking er at bruge ting på sjove måder, som de egentligt ikke er designet til
 
@@ -30,7 +30,7 @@ Her er et billede af nogen der hacker:
 
 ## Struktur for missioner
 
-I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission hører der en server. Du starte serveren og derefter kan du løse en eller flere opgaver, som er beskrevet i README.md filen i samme mappe som serverkoden. Her er en oversigt over de filer du finder i alle missionerne
+I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver mission er der en server, som du kan hacke. Du starter serveren og derefter kan du løse en eller flere opgaver, som er beskrevet i README.md filen i samme mappe som serverkoden. Her er en oversigt over de filer du finder i alle missionerne
 
 ```
 └── <Missionens mappe>
@@ -39,15 +39,15 @@ I dette projekt er der er en undermappe for hvert mission du kan løse. Til hver
     └── startserver.sh
 ```
 
-Udover disse tre filer kan der godt være flere afhængigt af missionen. Scriptet `startserver.sh` kan bruges til at starte missionens server, som du bagefter kan prøve at hacke.
+Scriptet `startserver.sh` kan bruges til at starte missionens server, som du bagefter kan prøve at hacke.
 
 
 ## Forudsætninger
 
 Projektet er designet til at køre på en billig Raspberry Pi computer. Den stakkels computer skal stå mål for lidt
-af hvert, men den kan til gengæld let nulstilles igen. Raspberry Pi kan køre operativsystemet Linux og du kan faktisk bruge en hvilken som helst Linux computer til at følge dette projekt. Hvis du følger dette projekt på ITU så stiller vi en Raspberry Pi computer til rådighed for dig, men du kan også selv købe en Raspberry Pi eller installere Linux på en gammel computer du har derhjemme.
+af hvert. Det gør heldigvis ikke noget, for den kan til gengæld let nulstilles igen. Raspberry Pi kan køre operativsystemet Linux og du kan faktisk bruge en hvilken som helst Linux computer til at følge dette projekt. Hvis du følger dette projekt på ITU så stiller vi en Raspberry Pi computer til rådighed for dig. Du kan selvfølgeligt selv købe en Raspberry Pi eller installere Linux på en gammel computer du har derhjemme.
 
-Du undrer dig måske over hvorfor vi bruger Linux og ikke f.eks. Windows eller Mac OS X, som du måske kender bedre. Årsagen er at langt de fleste servere i verden kører Linux. Selv ting du ikke tænker på som en computer kan være en computer der kører Linux, f.eks. et web camera, et køleskab eller en smart lyspære. Den slags computere der er indbygget i dagligdags ting hedder Internet of Things og det er en af årsagerne til at hacker selvforsvar bliver mere og mere vigtigt. I gamle dage kunne du måske ikke hacke en lyspære så nemt, men det kan du i dag!
+Du undrer dig måske over hvorfor vi bruger Linux i stedet for Windows eller Mac OS X, som du måske kender bedre. Årsagen er at langt de fleste servere i verden kører Linux. Selv ting du ikke tænker på som en computer, kan være en computer der kører Linux, f.eks. et kamera, et køleskab eller en lyspære. Den slags computere der er indbygget i dagligdags ting hedder Internet of Things og det er en af årsagerne til at hacker selvforsvar bliver mere og mere vigtigt. I gamle dage kunne du måske ikke hacke en lyspære så nemt, men det kan du i dag!
 
 ## Walkthrough til Mission: Hej Hacker!
 
