@@ -12,9 +12,9 @@ Hack Dig Selv består af en række missioner, som du kan udføre for at lære om
 Projektet indeholder følgende missioner, som du kan løse for at lære om hacking og IT sikkerhed:
 
 - I [Hej Hacker!](https://github.com/skipperkongen/hack-dig-selv/tree/master/hejhacker) lærer du at starte en webserver og forbinde til den med en browser.
-- I [Operation: Systemkald](https://github.com/skipperkongen/hack-dig-selv/tree/master/systemkald) vil du udføre dit første hack af en server. Problemet med serveren er, at den stoler lidt for meget på sine brugere. Du vil lære at man altid skal tjekke de beskeder man modtager fra brugere, specielt hvis man bruger dem som input til andre programmer.
-- I [Dødelig Indsprøjtning](https://github.com/skipperkongen/hack-dig-selv/tree/master/indsproejtning) (kommer snart) vil du lære om SQL injection. Du lærer endnu engang at man altid skal tjekke beskeder fra brugere hvis de skal bruges til at indsætte information i en database. I værste fald kan en bruger slette hele din database hvis du ikke passer på.
-- I [Sort Snak](https://github.com/skipperkongen/hack-dig-selv/tree/master/sortsnak) (kommer snart) lærer du om hemmelige beskeder. Du vil lære hvordan du kan knække koden og læse beskeder, som ellers ser ulæselige ud. Disse metoder er blevet brugt i mange tusind år af herskere til at modtage hemmelige beskeder fra deres spioner.
+- I [Command Injection](https://github.com/skipperkongen/hack-dig-selv/tree/master/command-injection) vil du udføre dit første hack af en server, som stoler lidt for meget på de beskeder den modtager fra sine brugere. Serveren er sårbar overfor såkaldt command injection (også kaldet shell injection). Du vil lære at man aldrig skal stole blindt på beskeder man modtager fra en bruger, specielt hvis man bruger beskederne som input til andre programmer.
+- I [SQL Injection](https://github.com/skipperkongen/hack-dig-selv/tree/master/sql-injection) (kommer snart) vil du lære om SQL injection. Du lærer endnu engang at man altid skal tjekke beskeder fra brugere hvis de skal bruges til at indsætte information i en database. I værste fald kan en bruger slette hele din database hvis du ikke passer på.
+- I [Sort Snak](https://github.com/skipperkongen/hack-dig-selv/tree/master/sortsnak) (kommer snart) stifter du bekendtskab med hemmelige beskeder. Du vil lære hvordan du kan knække koden for nogle simple kryptografiske metoder, som blev benyttet i mange tusind år af herskere til at modtage hemmelige beskeder fra deres spioner.
 
 ## Hvad betyder hacking?
 

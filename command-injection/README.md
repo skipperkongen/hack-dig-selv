@@ -1,4 +1,4 @@
-# Operation: Systemkald!
+# Mission: Command Injection!
 
 ![Old Computer](https://upload.wikimedia.org/wikipedia/commons/9/9e/CoCo3system.jpg)
 
@@ -23,20 +23,19 @@ Undersøg hvilket HTTP request browseren sender til serveren når du vælger et 
 
 - Brug din browsers udviklerværktøj til at se kildekoden til siden.
 - Find afsnittet som indeholder en `form`.
-- Undersøg formen og find ud af om browseren sender data til serveren med et GET request eller et POST request når du trykker submit? Dette bestemmes af `method` attributen på form-tagget.
+- Undersøg denne form og find ud af om browseren sender data til serveren med et GET request eller et POST request når du trykker submit? Dette bestemmes af `method` attributen på form-tagget.
 - Årstallet bliver sendt til serveren i en variabel. Hvilket variabel-navn bruger formen til at gemme årstallet? Du kan se denne oplysning i select-taggets `name` attribut.
 
 ## Mission 3: Send beskeder til serveren
 
 Nu har du lært lidt om hvordan siden fungerer. Åben nu et terminal vindue for at fortsætte.
 
-- Brug unix-kommandoen `curl` til at sende et HTTP request til serveren. Vi starter med at sende den samme besked til serveren som browseren sender.
-- Skriv `curl http://{IP ADRESSE}:8082/`. Hvad ser du?
-- Prøv at ændre kommandoen til `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/`. Hvad ser du nu?
+- Brug unix-kommandoen `curl` til at sende et HTTP request til serveren. Vi starter med at sende den samme besked til serveren som browseren sender: `curl -X POST -F 'year=2018' http://{IP ADRESSE}:8082/`
+- Prøv med nogle forskellige årstal indtil du har forstået hvordan det virker.
 
 ## Mission 4: Hack serveren
 
-Nu skal vi prøve noget sjovt. I stedet for kun at sende et årstal til serveren, vil vi sende et årstal plus lidt mere.
+Nu skal vi prøve noget sjovt. I stedet for kun at sende et årstal til serveren, sender vi et årstal PLUS lidt mere.
 
 - Skriv `curl -X POST -F 'year=2018 && echo hej' http://{IP ADRESSE}:8082/`. Hvad ser du nu?
 - Serveren forventer et årstal, som den vil sætte ind efter `cal` kommandoen, f.eks `cal 2018`. Denne gang sendte vi et årstal efterfulgt af `&&echo hej` hvilket resulterer i at kommandoen `cal 2018 && echo hej` bliver udført på serveren, hvilket er to kommandoer i stedet for én! Først kører den `cal 2018` og bagefter kører den `echo hej`, hvilket udskriver beskeden "hej". I Unix kan du skrive `&&` mellem to unix-kommandoer for at udføre dem efter hinanden (hvis kommando 1 ikke fejler).
@@ -51,7 +50,12 @@ Hvis det lykkes vil du se at siden er blevet hacket når du genindlæser den i b
 
 # Mission 5: Forstå og ret fejlen
 
-Hvis du har mod på det, så undersøg serverkoden og find ud af hvorfor den er så usikker og hvordan du kan rette det.
+Hvis du har mod på det, så undersøg serverkoden og find ud af hvorfor den er så usikker og hvordan du kan rette det. Da serveren er skrevet i Python, kan du bruge Python's indbyggede [quote](https://docs.python.org/3/library/shlex.html#shlex.quote) funktion til at sikre den bedre.
+
+- Åben kildekoden til serveren
+- Find linjen hvor der står `year = request.form['year']`
+- Erstat denne med `year = quote(request.form['year'])`
+- Hvorfor er det bedre?
 
 ## Unix kommandoer for denne mission
 
