@@ -2,8 +2,7 @@
 
 > Dette projekt er udviklet af Pimin Konstantin Kefaloukos til børn som vil lære om hacking på en ansvarlig måde
 
-I dette projekt kan du lære om hacking. At lære at hacke er lidt ligesom at gå til karate: du skal ikke bruge det du har
-lært her til at hacke andre uden deres tilladelse. Det er ulovligt at hacke andres servere uden tilladelse, men du må godt hacke dig selv! Du kan også aftale med en ven at i hacker hinanden, men husk *altid* at spørge om lov først! Tænk på hvis nogen hackede dig uden at spørge om lov! Det ville være meget irriterende, ikke? Lær at hacke ved at hacke dig selv. Det er den bedste måde.
+Velkommen til Hack Dig Selv! Her kan du lære at hacke. At hacke er lidt ligesom at gå til karate: du skal bruge dine evner ansvarligt. Det er ulovligt at hacke andres uden deres tilladelse, men du må godt hacke dig selv! Du kan også aftale med en ven at i hacker hinanden, men husk *altid* at spørge om lov først! Tænk på hvis nogen hackede dig uden at spørge om lov! Det ville være meget irriterende, ikke?
 
 Hack Dig Selv består af en række missioner, som du kan udføre for at lære om hacking. I hver mission starter du et nyt serverprogram, som du bagefter kan prøve at hacke eller løse andre opgaver. Du lærer hurtigt en masse om hvad der gør en server sårbar og også hvordan du kan forbedre serverens kode så den bliver sværere at hacke i fremtiden. Du lærer at servere tit er sårbare fordi dem, der har skrevet koden til dem, har glemt at tænkte sig ordentligt om!! På en af missionerne skal du bryde en hemmelig kode. Det er en form for hacking, der kaldes for "dekryptering".
 
